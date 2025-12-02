@@ -1,26 +1,23 @@
 {
-  "name": "ai-server",
+  "name": "biruk_ai",
   "version": "1.0.0",
-  "description": "Simple Express server for AI questions",
+  "description": "Server for Groq + Camb.ai translation + TTS with Express",
   "type": "module",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "build": "echo 'Nothing to build. Server is ready.'"
   },
-  "keywords": [
-    "express",
-    "ai",
-    "groq",
-    "chat"
-  ],
-  "author": "Your Name",
-  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "node-fetch": "^3.3.2"
+    "express": "^4.19.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "node-fetch": "^3.3.2",
+    "ffmpeg-static": "^5.1.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.1.0"
   }
 }
